@@ -59,6 +59,7 @@
 
       <fieldset>
         <legend>Kostönskemål</legend>
+
         <input type="checkbox" id="veg" name="kost" value="veg">
         <label for="veg">Vegetarisk</label>
 
@@ -67,12 +68,22 @@
 
         <input type="checkbox" id="gluten" name="kost" value="gluten">
         <label for="gluten">Glutenfri</label>
+      </fieldset>
 
-        <input type="radio" id="epost" name="kost" value="epost">
-        <label for="epost">E-post</label>
+      <fieldset>
+        <legend>Bekräftelsesätt</legend>
+        
+        <input type="radio" id="e-post" name="kost" value="e-post">
+        <label for="e-post">E-post</label>
 
         <input type="radio" id="sms" name="kost" value="sms">
         <label for="sms">SMS</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Samtycke*</legend>
+        <input type="checkbox" id="samtycke" name="samtycke" value="samtycke" required>
+        <label for="samtycke">Samtycke</label>
       </fieldset>
 
       <button type="submit">Skicka bokning</button>
