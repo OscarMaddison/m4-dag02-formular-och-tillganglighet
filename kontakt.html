@@ -23,13 +23,13 @@
 
     <form action="#" method="post">
       <div class="falt">
-        <label for="namn">Namn</label>
-        <input type="text" id="namn" name="namn" placeholder="Sune Sunesson">
+        <label for="namn">Namn*</label>
+        <input type="text" id="namn" name="namn" placeholder="Sune Sunesson" required>
       </div>
 
       <div class="falt">
-        <label for="epost">E-postadress</label>
-        <input type="email" id="epost" name="epost" placeholder="namn@exempel.se">
+        <label for="epost">E-postadress*</label>
+        <input type="email" id="epost" name="epost" placeholder="namn@exempel.se" required>
       </div>
 
       <div class="falt">
@@ -38,13 +38,13 @@
       </div>
 
       <div class="falt">
-        <label for="datum">Datum</label>
-        <input type="date" id="datum" name="datum" placeholder="00/00/0000">
+        <label for="datum">Datum*</label>
+        <input type="date" id="datum" name="datum" placeholder="00/00/0000" required>
       </div>
       
       <div class="falt"></div>
-        <label for="antal">Antal Personer</label>
-        <select id="antal" name="antal">
+        <label for="antal">Antal Personer*</label>
+        <select id="antal" name="antal" required>
             <option value="">Välj antal</option>
             <option value="1">1 person</option>
             <option value="2">2 personer</option>
@@ -69,12 +69,12 @@
       </fieldset>
 
       <fieldset>
-        <legend>Hur vill du få bekräftelsen?</legend>
+        <legend>Hur vill du få bekräftelsen?*</legend>
         
-        <input type="radio" id="e-post" name="kost" value="e-post">
+        <input type="radio" id="e-post" name="kost" value="e-post" required>
         <label for="e-post">E-post</label>
 
-        <input type="radio" id="sms" name="kost" value="sms">
+        <input type="radio" id="sms" name="kost" value="sms" required>
         <label for="sms">SMS</label>
       </fieldset>
 
