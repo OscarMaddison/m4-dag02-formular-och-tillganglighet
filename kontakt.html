@@ -33,7 +33,7 @@
       </div>
 
       <div class="falt">
-        <label for="telefon">Telefonnummer</label>
+        <label for="telefon">Telefon (valfritt)</label>
         <input type="tele" id="telefon" name="telefon" placeholder="000-0000000">
       </div>
 
@@ -51,10 +51,8 @@
             <option value="3">3 personer</option>
             <option value="4">4 personer</option>
             <option value="5">5 personer</option>
+            <option value="fler">Fler än 5 personer</option>
         </select>
-
-        <label for="onskemal">Önskemål</label>
-        <textarea id="onskemal" name="onskemal" rows="4"></textarea>
       </div>
 
       <fieldset>
@@ -71,7 +69,7 @@
       </fieldset>
 
       <fieldset>
-        <legend>Bekräftelsesätt</legend>
+        <legend>Hur vill du få bekräftelsen?</legend>
         
         <input type="radio" id="e-post" name="kost" value="e-post">
         <label for="e-post">E-post</label>
@@ -80,10 +78,14 @@
         <label for="sms">SMS</label>
       </fieldset>
 
+      <div class="falt"></div>
+        <label for="onskemal">Övriga önskemål</label>
+        <textarea id="onskemal" name="onskemal" rows="4"></textarea>
+      </div>
+
       <fieldset>
-        <legend>Samtycke*</legend>
+        <legend>Jag godkänner att Kafé Kardemumma sparar mina uppgifter för bokningen.*</legend>
         <input type="checkbox" id="samtycke" name="samtycke" value="samtycke" required>
-        <label for="samtycke">Samtycke</label>
       </fieldset>
 
       <button type="submit">Skicka bokning</button>
